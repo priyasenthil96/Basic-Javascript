@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            function LargeNo(){
+                let n1 = prompt("Enter the First Number");
+               let  n2 = prompt("Enter the Second Number");
+                let n3 = prompt("Enter the Third number");
+                if(Number(n1)>Number(n2) && Number(n1)>Number(n3))
+                {
+                    document.write(n1+" is the greatest number");
+                }
+                else if(Number(n2)>Number(n1) && Number(n2)>Number(n3))
+                {
+                    document.write(n2 +"is the greatest number");
+                }
+                else{
+                    document.write(n3 +"is the greatest number");
+                }
+            }
+        </script>
+        <form>
+            <input type="button" value="LargeNo" onclick="LargeNo()">
+        </form>
+    </body>
+</html>
