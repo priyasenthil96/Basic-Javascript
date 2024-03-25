@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            const a=[1,2,3,4];
+            const b=[2,3,4,5];
+            function compare(a,b){
+                const result = JSON.stringify(a)== JSON.stringify(b)
+                if(result){
+                    document.write("The arrays are same");
+                }
+                else{
+                    document.write("The arrays are different");
+                }
+            }
+            compare(a,b);
+        </script>
+    </body>
+</html>
