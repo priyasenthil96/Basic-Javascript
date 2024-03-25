@@ -1,0 +1,11 @@
+<html>
+    <head>
+          <title>Arithmetic Operators</title>
+    </head>
+    <body>
+        <script>
+            var a=10; b=15;
+            let z=a+b;
+        </script>
+    </body>
+</html>
