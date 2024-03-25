@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            var a=50;
+            if(a>=100){
+                document.write("Hello world");
+            }
+            else if(a>=80){
+                document.write("Hello India");
+            }
+            else if(a>=60){
+                document.write("Hi TamilNadu");
+            }
+            else {
+                document.write("Hi Valli akka");
+            } 
+        </script>
+    </body>
+</html>
