@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>School Admission Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>School Admission Form</h1>
+    <form id="admissionForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <h2>Admission Details</h2>
+    <table id="admissionTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table body will be populated dynamically using JavaScript -->
+        </tbody>
+    </table>
+    <script>
+        function submitForm() {
+            // Get form data
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var grade = document.getElementById("grade").value;
+            var address = document.getElementById("address").value;
+
+            // Create a new row for the table
+            var table = document.getElementById("admissionTable").getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.rows.length);
+
+            // Insert cells with form data into the new row
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = name;
+            cell2.innerHTML = age;
+            cell3.innerHTML = grade;
+            cell4.innerHTML = address;
+
+            // Reset the form
+            document.getElementById("admissionForm").reset();
+        }
+    </script>
+</body>
+</html>
