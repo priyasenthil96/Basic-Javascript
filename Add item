@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h1>Adding item into an array</h1>
+    </body>
+    <script>
+        const fruits = ["Apple","Beetroot","Carrot"];
+        fruits.push("Ginger","Lemon");
+        document.write(fruits);
+    </script>
+</html>
