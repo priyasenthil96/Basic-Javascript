@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function factorial()
+            {
+            var x=1;
+            var a=prompt("enter a number");
+            for(i=1;i<=a;i++)
+            {
+                x=x*i;
+            }
+            document.write("factorial of number"+a+ "is",x);
+            }
+        </script>
+        <form>
+            <input type="button" value="factorial" onclick="factorial()">
+        </form>
+    </body>
+</html>
